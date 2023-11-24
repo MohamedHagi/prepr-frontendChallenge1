@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "../View/view.css";
-import Labs from "../View/Labs.png";
-import Challenges from "../View/Challenges.png";
-import Projects from "../View/Projects.png";
+
+import Filter from "../Filter/Filter";
+import CardContainer from "../Card/CardContainer";
+import cardData from "./dummyCards.json";
 
 export default function View() {
   const [viewOption, setViewOption] = useState("Labs");
@@ -11,23 +12,8 @@ export default function View() {
     setViewOption(option);
   };
 
-  const getImageForOption = () => {
-    switch (viewOption) {
-      case "Labs":
-        return Labs;
-      case "Challenges":
-        return Challenges;
-      case "Resources":
-        return Labs;
-      case "Projects":
-        return Projects;
-      default:
-        return null;
-    }
-  };
-
   return (
-    <div className="container" style={{ overflow: "hidden" }}>
+    <div className="viewContainer">
       <div className="d-flex align-items-center explore_section my-4">
         <div
           className={`w-25 explore_component ${
@@ -64,15 +50,15 @@ export default function View() {
           <h2 className="text-center">Projects</h2>
         </div>
       </div>
-
-      <div>
-        {viewOption && (
-          <img
-            src={getImageForOption()}
-            alt={`Image for ${viewOption}`}
-            class="viewImages"
-          />
-        )}
+      <div className="cardfilter-container">
+        <div className="row">
+          <Filter filterType={viewOption} />
+          <div className="col-md-10 exp_box">
+            <div className="row">
+              <CardContainer cardData={cardData} filterType={viewOption} />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

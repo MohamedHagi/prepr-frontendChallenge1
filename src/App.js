@@ -8,13 +8,127 @@ import "./index.css";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Navbar from "./components/Navbar/Navbar";
 import View from "./components/View/View";
+import styled, { createGlobalStyle } from "styled-components";
+import Filter from "./components/Filter/Filter";
 
 function App() {
+  const GlobalStyle = createGlobalStyle`
+  header .right_nav li a {
+    color: ${(props) => (props.darkMode ? "#ffffff" : "#000000")};
+  }
+
+
+
+.dropdown-menu.dropdown-menu-right.dropdownMenu.show {
+    background: ${(props) => (props.darkMode ? "#000000" : "#ffffff")};
+  }
+
+  .form-control{
+    background: ${(props) => (props.darkMode ? "#000000" : "#ffffff")};
+  }
+
+  .form-control::placeholder{
+    color: ${(props) => (props.darkMode ? "#ffffff" : "")};
+  }
+
+  .col-1{
+    background: ${(props) => (props.darkMode ? "#000000" : "")};
+  }
+
+  .iconsrch{
+    color: ${(props) => (props.darkMode ? "#ffffff" : "")};
+  }
+
+  .explore_pill{
+
+    background: ${(props) => (props.darkMode ? "#000000" : "")};
+    color: ${(props) => (props.darkMode ? "#ffffff" : "")};
+
+  }
+
+  .explore_component{
+
+    background: ${(props) => (props.darkMode ? "#000000" : "")};
+    color: ${(props) => (props.darkMode ? "#ffffff" : "")};
+
+  }
+
+  .dropdown-menu{
+    background: ${(props) => (props.darkMode ? "#000000" : "")};
+    color: ${(props) => (props.darkMode ? "#ffffff" : "")};
+  }
+
+  .dropdown-item:hover{
+    background: ${(props) => (props.darkMode ? "#000000" : "")};
+    color: ${(props) => (props.darkMode ? "#ffffff" : "")};
+  }
+
+  #explore_interests > div.row.justify-content-center > div > div > div.col-11 > span > span.selection > span{
+    background: ${(props) => (props.darkMode ? "#000000" : "#ffffff")};
+  }
+
+  .select2-search__field::placeholder{
+    color: ${(props) => (props.darkMode ? "#ffffff" : "")};
+  }
+
+  .bgWhite {
+    background-color: ${(props) => (props.darkMode ? "#000000" : "#ffffff")};
+  }
+
+  .explore_section{
+
+    background: ${(props) => (props.darkMode ? "#000000" : "#ffffff")};
+    color: ${(props) => (props.darkMode ? "#ffffff" : "#000000")};
+  }
+  
+  .viewContainer{
+    background: ${(props) => (props.darkMode ? "#8b8b8b" : "#ffffff")};
+  }
+
+
+`;
+
+  const ToggleContainer = styled.div`
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 3000;
+    color: ${(props) => (props.darkMode ? "#ffffff" : "#000000")};
+  `;
+
+  const ToggleButton = styled.div`
+    display: inline-block;
+    padding: 8px;
+    background-color: ${(props) => (props.darkMode ? "#000000" : "#fff")};
+    border: ${(props) => (props.darkMode ? "" : "2px solid black")};
+    color: ${(props) => (props.darkMode ? "#ffffff" : "#000000")};
+    border-radius: 4px;
+    margin-right: 8px;
+  `;
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <>
+      <GlobalStyle darkMode={darkMode} />
+      <ToggleContainer darkMode={darkMode}>
+        <ToggleButton darkMode={darkMode} onClick={toggleDarkMode}>
+          {darkMode ? "On" : "Off"}
+        </ToggleButton>
+        Dark Mode
+      </ToggleContainer>
       <Navbar />
       <LandingPage />
-      <View />
+      <div className="viewSection">
+        <View />
+      </div>
     </>
   );
 }

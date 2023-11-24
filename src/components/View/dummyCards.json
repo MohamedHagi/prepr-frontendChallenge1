@@ -1,0 +1,130 @@
+{
+  "Labs": [
+    {
+      "imageURL": "https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/uploads/labs/GU4ZjyHg7uFtLdcW4A44qcQtj.png",
+      "title": "Getting Started Lab For Employment Service Providers (ESP)",
+      "hostedBy": "Prepr",
+      "followCount": 0,
+      "shareCount": 0,
+      "labTypeIconURL": "https://preprlabs.org/front/img/Component_Icons/lab_icon.svg",
+      "labType": "Public Lab",
+      "lastUpdate": "1 year ago",
+      "membersCount": 35,
+      "duration": "None",
+      "level": "None",
+      "description": "If you're here then you're a passionate employment service provider who’s constantly looking for new tools and concepts. We've prepared a series of Challenges just for you! The Challenges in this Lab are designed to help you learn how you can get the most out of our platform, get started today!",
+      "tags": ["Prepr Labs"]
+    },
+    {
+      "imageURL": "https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/uploads/labs/GU4ZjyHg7uFtLdcW4A44qcQtj.png",
+      "title": "Getting Started Lab For Employment Service Providers (ESP)",
+      "hostedBy": "Prepr",
+      "followCount": 0,
+      "shareCount": 0,
+      "labTypeIconURL": "https://preprlabs.org/front/img/Component_Icons/lab_icon.svg",
+      "labType": "Public Lab",
+      "lastUpdate": "1 year ago",
+      "membersCount": 35,
+      "duration": "None",
+      "level": "None",
+      "description": "If you're here then you're a passionate employment service provider who’s constantly looking for new tools and concepts. We've prepared a series of Challenges just for you! The Challenges in this Lab are designed to help you learn how you can get the most out of our platform, get started today!",
+      "tags": ["Prepr Labs"]
+    }
+  ],
+  "Challenges": [
+    {
+      "imageURL": "https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/uploads/challenge/DGIMMt3qAlFSXjNfOJ0NsrOsW.png",
+      "title": "DTP & FUN - Team Business Innovation Challenge",
+      "hostedBy": "Prepr",
+      "followCount": 24,
+      "shareCount": 8,
+      "labTypeIconURL": "https://preprlabs.org/front/img/Component_Icons/challenge_icon.svg",
+      "labType": "Challenge",
+      "lastUpdate": "6 months ago",
+      "membersCount": 20,
+      "duration": "2 weeks",
+      "level": "Intermediate",
+      "description": "How might we better support businesses around us? Businesses around the world have had to adapt over the last 3 years as the nature of sales has diversified and changed, and will need to continue to evolve to meet the realities of a post-pandemic world. Challenges abound across all aspects of organizations' business models, including operations, workforce, customer experience an...",
+      "tags": ["Audience Analysis", "Audience Segmentation", "Business Planning"]
+    },
+    {
+      "imageURL": "https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/uploads/challenge/DGIMMt3qAlFSXjNfOJ0NsrOsW.png",
+      "title": "DTP & FUN - Team Business Innovation Challenge",
+      "hostedBy": "Prepr",
+      "followCount": 24,
+      "shareCount": 8,
+      "labTypeIconURL": "https://preprlabs.org/front/img/Component_Icons/challenge_icon.svg",
+      "labType": "Challenge",
+      "lastUpdate": "6 months ago",
+      "membersCount": 20,
+      "duration": "2 weeks",
+      "level": "Intermediate",
+      "description": "How might we better support businesses around us? Businesses around the world have had to adapt over the last 3 years as the nature of sales has diversified and changed, and will need to continue to evolve to meet the realities of a post-pandemic world. Challenges abound across all aspects of organizations' business models, including operations, workforce, customer experience an...",
+      "tags": ["Audience Analysis", "Audience Segmentation", "Business Planning"]
+    }
+  ],
+  "Resources": [
+    {
+      "imageURL": "https://d3f06rtlkr354b.cloudfront.net/uploads/resources/image/rgQBo0g1JJuDveQA9DwHxwT1fhhpstUWVPgn8Ts0.png",
+      "title": "Resource Card 1",
+      "hostedBy": "Prepr",
+      "followCount": 5,
+      "shareCount": 3,
+      "labTypeIconURL": "https://preprlabs.org/front/img/Component_Icons/resource_module_icon.svg",
+      "labType": "Resource",
+      "lastUpdate": "3 months ago",
+      "membersCount": 56,
+      "duration": "Varies",
+      "level": "Any",
+      "description": "This is the Skills for Success Program's lecture deck on Creativity & Innovation.",
+      "tags": ["Creativity", "Innovation"]
+    },
+    {
+      "imageURL": "https://d3f06rtlkr354b.cloudfront.net/uploads/resources/image/rgQBo0g1JJuDveQA9DwHxwT1fhhpstUWVPgn8Ts0.png",
+      "title": "Resource Card 1",
+      "hostedBy": "Prepr",
+      "followCount": 5,
+      "shareCount": 3,
+      "labTypeIconURL": "https://preprlabs.org/front/img/Component_Icons/resource_module_icon.svg",
+      "labType": "Resource",
+      "lastUpdate": "3 months ago",
+      "membersCount": 56,
+      "duration": "Varies",
+      "level": "Any",
+      "description": "This is the Skills for Success Program's lecture deck on Creativity & Innovation.",
+      "tags": ["Creativity", "Innovation"]
+    }
+  ],
+  "Projects": [
+    {
+      "imageURL": "https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/uploads/projects/id-10719/Screen Shot 2023-11-23 at 8.43.48 PM.png",
+      "title": "MohamedHagi - Frontend Developer Challenge 1: Web Page Creation",
+      "hostedBy": "Prepr",
+      "followCount": 15,
+      "shareCount": 8,
+      "labTypeIconURL": "https://preprlabs.org/front/img/Component_Icons/project_icon.svg",
+      "labType": "Project",
+      "lastUpdate": "2 months ago",
+      "membersCount": 25,
+      "duration": "1 month",
+      "level": "Advanced",
+      "description": "Frontend Developer Challenge 1.",
+      "tags": []
+    },
+    {
+      "imageURL": "https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/uploads/projects/id-10719/Screen Shot 2023-11-23 at 8.43.48 PM.png",
+      "title": "MohamedHagi - Frontend Developer Challenge 1: Web Page Creation",
+      "hostedBy": "Prepr",
+      "followCount": 20,
+      "shareCount": 10,
+      "labTypeIconURL": "https://preprlabs.org/front/img/Component_Icons/project_icon.svg",
+      "labType": "Project",
+      "lastUpdate": "1 month ago",
+      "membersCount": 30,
+      "duration": "2 months",
+      "level": "Intermediate",
+      "description": "Frontend Developer Challenge 1.",
+      "tags": []
+    }
+  ]
+}

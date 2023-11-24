@@ -8,13 +8,14 @@ export default function LandingPage() {
     setIsActive(false);
   };
   return (
-    <section className="bg-alice-blue project-section">
+    <section className="explore-section bg-alice-blue ">
       {isActive && (
         <div id="explore_interests">
-          <div className="button-right" onClick={closeExplore}>
+          <div className="button-right">
             <img
               id="close_explore_interests"
               style={{ width: "1.5rem" }}
+              onClick={closeExplore}
               className="m-4"
               src="https://preprlabs.org/front/img/ic_round-clear.svg"
               alt="close"
@@ -44,7 +45,7 @@ export default function LandingPage() {
                   {" "}
                   <i className="fa fa-search position-absolute iconsrch"></i>
                 </div>
-                {/* <input className="mt-4 form-control" type="search" placeholder="Search for Skills" style={{ paddingLeft: '30px' }} /> */}
+
                 <div className="col-11">
                   <select
                     multiple=""

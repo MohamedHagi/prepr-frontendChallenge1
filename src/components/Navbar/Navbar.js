@@ -9,14 +9,11 @@ export default function Navbar() {
   };
   return (
     <>
-      <header className="navbar bg-white fixed-top navbar-expand-lg top-nw-nav-header">
+      <header className="navbar bgWhite fixed-top navbar-expand-lg top-nw-nav-header">
         <div className="container-fluid">
           <ul className="navbar-nav flex-row d-md-flex top-nw-nv-l">
             <li className="nav-item">
-              <a
-                href="https://preprlabs.org/explore"
-                className="waves-effect waves-light"
-              >
+              <a href="#" className>
                 <img
                   src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/logoNew.png"
                   style={{ width: "100px!important" }}
@@ -28,41 +25,42 @@ export default function Navbar() {
           </ul>
           <li
             className={`${
-              isOpen ? "nav-item close-menu" : "nav-item bar-menu"
+              isOpen ? "nav-item hamburger-close" : "nav-item hamburger-open"
             }`}
             onClick={toggleOpen}
           >
             <a
               href="javascript:void(0)"
-              className="nav-link button-collapse waves-effect waves-light active"
+              className="nav-link button-collapse active"
             ></a>
           </li>
           <ul className="navbar-nav right_nav  top-nw-nav ">
-            <span className="top-menu-options">
-              <li className="nav-item d-sm-flex d-md-flex d-lg-flex d-xl-flex">
-                <a
-                  className="nav-link waves-effect waves-light"
-                  href="https://preprlabs.org/explore"
-                >
-                  <span className="d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                    Explore
-                  </span>
+            <span className="menuOptions">
+              <li className="nav-item">
+                <a className="nav-link" href="https://preprlabs.org/explore">
+                  <span>Explore</span>
                 </a>
               </li>
 
-              <li className="nav-item dropdown d-sm-flex d-md-flex d-lg-flex d-xl-flex">
+              <li class="nav-item dropdown d-sm-flex d-md-flex d-lg-flex d-xl-flex show">
                 <a
-                  className="nav-link dropdown-toggle waves-effect waves-light"
+                  class="nav-link dropdown-toggle waves-effect waves-light"
+                  data-qa="Top Nav: Dashboards"
+                  id="new_org_dashboard"
                   href="#"
+                  data-toggle="dropdown"
+                  data-url="https://preprlabs.org/organisation/home"
+                  aria-expanded="true"
                 >
-                  <span className="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                  <span class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
                     Dashboard
                   </span>
                 </a>
-                <ul className="dropdown-menu firstmenu">
-                  <li className="dropdown-submenu">
+                <ul class="dropdown-menu firstmenu show">
+                  <li class="dropdown-submenu">
                     <a
-                      className="dropdown-item dropdown-toggle waves-effect waves-light"
+                      class="dropdown-item dropdown-toggle waves-effect waves-light"
+                      data-qa="Top Nav: Dasboards - User"
                       href="https://preprlabs.org/user/home"
                     >
                       <img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/user.png" />
@@ -72,61 +70,35 @@ export default function Navbar() {
                 </ul>
               </li>
 
-              <li className="nav-item d-sm-flex d-md-flex d-lg-flex d-xl-flex">
-                <a
-                  className="nav-link waves-effect waves-light"
-                  href="https://preprlabs.org/list/challenge"
-                >
-                  <span className="d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                    My Challenges{" "}
-                  </span>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <span>My Challenges </span>
                 </a>
               </li>
-              <li className="nav-item d-sm-flex d-md-flex d-lg-flex d-xl-flex">
-                <a
-                  className="nav-link waves-effect waves-light"
-                  href="https://preprlabs.org/joinedLab"
-                >
-                  <span className="d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                    My Labs
-                  </span>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <span>My Labs</span>
                 </a>
               </li>
-              <li className="nav-item d-sm-flex d-md-flex d-lg-flex d-xl-flex">
-                <a
-                  className="nav-link waves-effect waves-light"
-                  href="https://preprlabs.org/my-projects"
-                >
-                  <span className="d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                    My Projects
-                  </span>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <span>My Projects</span>
                 </a>
               </li>
-              <li className="nav-item d-sm-flex d-md-flex d-lg-flex d-xl-flex">
-                <a
-                  className="nav-link waves-effect waves-light"
-                  href="https://preprlabs.org/myCareer/MohamedHagi"
-                >
-                  <span className="d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                    Career Explorer
-                  </span>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <span>Career Explorer</span>
                 </a>
               </li>
             </span>
             <li>
-              <a
-                className="waves-effect waves-block"
-                href="https://preprlabs.org/notifications"
-              >
+              <a className="waves-effect waves-block" href="#">
                 <img src="https://preprlabs.org/assets/images/header/bell-icon.svg" />
                 <span className="notifications-indicator"></span>
               </a>
             </li>
             <li>
-              <a
-                className="waves-effect waves-block"
-                href="https://preprlabs.org/chat"
-              >
+              <a className="waves-effect waves-block" href="#">
                 <img
                   src="https://preprlabs.org/assets/images/header/inbox-icon.svg"
                   style={{ width: 27, height: 27 }}
@@ -134,10 +106,7 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a
-                className="waves-effect waves-block"
-                href="https://intercom.help/preprme/en/"
-              >
+              <a className="waves-effect waves-block" href="#">
                 <img src="https://preprlabs.org/assets/images/header/help-icon.svg" />
               </a>
             </li>
@@ -155,10 +124,10 @@ export default function Navbar() {
                 </div>
               </div>
             </li>
-            <li className="nav-item notification dropdown">
+            <li className="nav-item dropdown">
               <a
-                href="https://preprlabs.org/profile/MohamedHagi"
-                className="nav-link user_details_drop dropdown-toggle waves-effect waves-light"
+                href=""
+                className="nav-link user_details_drop dropdown-toggle"
                 role="button"
               >
                 <img
@@ -167,13 +136,10 @@ export default function Navbar() {
                   title="Mohamed Hagi"
                 />
               </a>
-              <div className="dropdown-menu dropdown-menu-right notifi_menu">
+              <div className="dropdown-menu dropdown-menu-right">
                 <ul className="user-settings-dropdown">
                   <li className="user-settings-dropdown-info">
-                    <a
-                      href=" https://preprlabs.org/profile/MohamedHagi "
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="# ">
                       <img
                         className="icon-circle bg-light-green"
                         src="https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/uploads/users/oBI7aBplH7uvY74q5SPHjFJcduxUR5PNfY7gqLjp.png"
@@ -181,44 +147,29 @@ export default function Navbar() {
                       />
                     </a>
                     <div>
-                      <a
-                        className="dropdown-username waves-effect waves-light"
-                        href=" https://preprlabs.org/profile/MohamedHagi "
-                      >
+                      <a className="dropdown-username" href="#">
                         Mohamed Hagi
                       </a>
                       <div className="dropdown-rank">Learn Rank 2</div>
                     </div>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/profile/MohamedHagi"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <div className="menu-info">Profile</div>
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/newsfeed"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <div className="menu-info">Newsfeed</div>
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/setting"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <div className="menu-info">Settings</div>
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/logout"
-                      className="waves-effect waves-block"
-                    >
+                    <a href="#" className="waves-effect waves-block">
                       <div className="menu-info">Log out</div>
                     </a>
                   </li>
@@ -231,7 +182,7 @@ export default function Navbar() {
             >
               <a
                 href="#"
-                className="nav-link user_details_drop dropdown-toggle waves-effect waves-light"
+                className="nav-link user_details_drop dropdown-toggle"
                 role="button"
               >
                 <img src="https://preprlabs.org/assets/images/header/app-icon.svg" />
@@ -243,109 +194,73 @@ export default function Navbar() {
               >
                 <ul className="app-dropdown">
                   <li>
-                    <a
-                      href="https://preprlabs.org/joinedLab"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <img src="https://preprlabs.org/assets/images/header/lab-icon.svg" />
                       Labs
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/joinedLab"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <img src="https://preprlabs.org/assets/images/header/lab-program-icon.svg" />
                       Lab programs
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/my-projects"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <img src="https://preprlabs.org/assets/images/header/project-icon.svg" />
                       Projects
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/list/challenge"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <img src="https://preprlabs.org/assets/images/header/challenge-icon.svg" />
                       Challenges
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/list/challenge"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <img src="https://preprlabs.org/assets/images/header/challenge-path-icon.svg" />
                       Challenge Paths
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/my-project-assessment"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <img src="https://preprlabs.org/assets/images/header/assessment-icon.svg" />
                       Assessments
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/resource"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#ffffff" className="">
                       <img src="https://preprlabs.org/assets/images/header/resource-module-icon.svg" />
                       Resources
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/myCareer/MohamedHagi"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <img src="https://preprlabs.org/assets/images/header/skill-icon.svg" />
                       Career Explorer
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/achievements"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <img src="https://preprlabs.org/assets/images/header/achievement-icon.svg" />
                       Achievements
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/organisation-details"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <img src="https://preprlabs.org/assets/images/header/organization-icon.svg" />
                       Organizations
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/teamMatching"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <img src="https://preprlabs.org/assets/images/header/team-matching-icon.svg" />
                       Team Matching
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://preprlabs.org/my-leader-board"
-                      className=" waves-effect waves-light"
-                    >
+                    <a href="#" className="">
                       <img src="https://preprlabs.org/assets/images/header/leaderboard-icon.svg" />
                       Leaderboard
                     </a>
@@ -372,10 +287,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className="sidebar-user-details">
-            <a
-              data-qa="Mobile Nav: View Profile - Icon"
-              href="https://preprlabs.org/profile/MohamedHagi"
-            >
+            <a data-qa="Mobile Nav: View Profile - Icon" href="#">
               <img
                 src="https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/uploads/users/oBI7aBplH7uvY74q5SPHjFJcduxUR5PNfY7gqLjp.png"
                 alt="Profile"
@@ -385,7 +297,7 @@ export default function Navbar() {
               <a
                 data-qa="Mobile Nav: View Profile"
                 className="dropdown-username"
-                href="https://preprlabs.org/profile/MohamedHagi"
+                href="#"
               >
                 Mohamed Hagi
               </a>
@@ -393,32 +305,26 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <div className="custom-scrollbar-outer">
+        <div>
           <div
-            className="slimScrollDiv"
             style={{ position: "relative", overflow: "hidden", width: "auto" }}
           >
-            <div
-              className="custom-scrollbar-inner"
-              style={{ height: "547px", overflow: "hidden", width: "auto" }}
-            >
+            <div style={{ height: "547px", overflow: "hidden", width: "auto" }}>
               <ul>
                 <li className="nav_icon nav_explore">
-                  <a href="https://preprlabs.org/explore">Explore</a>
+                  <a href="#">Explore</a>
                 </li>
                 <li className="nav_icon nav_dashboard">
-                  <a href="https://preprlabs.org/user/home">Dashboard</a>
+                  <a href="#">Dashboard</a>
                 </li>
                 <li className="nav_icon nav_labs">
-                  <a href="https://preprlabs.org/joinedLab">My Labs</a>
+                  <a href="#">My Labs</a>
                 </li>
                 <li className="nav_icon nav_challenges">
-                  <a href="https://preprlabs.org/list/challenge">
-                    My Challenges
-                  </a>
+                  <a href="#">My Challenges</a>
                 </li>
                 <li className="nav_icon nav_projects">
-                  <a href="https://preprlabs.org/my-projects">My Projects</a>
+                  <a href="#">My Projects</a>
                 </li>
                 <li className="nav_chevron nav_browse">
                   <a href="javascript:void(0)">Browse</a>
@@ -427,10 +333,10 @@ export default function Navbar() {
                   <a href="javascript:void(0)">Account</a>
                 </li>
                 <li className="nav_icon nav_help">
-                  <a href="https://intercom.help/preprme/en/">Help center</a>
+                  <a href="#">Help center</a>
                 </li>
                 <li className="nav_icon nav_logout">
-                  <a href="https://preprlabs.org/logout">Log out</a>
+                  <a href="#">Log out</a>
                 </li>
               </ul>
             </div>
