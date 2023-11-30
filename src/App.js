@@ -12,6 +12,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import Filter from "./components/Filter/Filter";
 
 function App() {
+  //using a global style to toggle the darkMoe colors
   const GlobalStyle = createGlobalStyle`
   header .right_nav li a {
     color: ${(props) => (props.darkMode ? "#ffffff" : "#000000")};
@@ -25,6 +26,7 @@ function App() {
 
   .form-control{
     background: ${(props) => (props.darkMode ? "#000000" : "#ffffff")};
+    color: ${(props) => (props.darkMode ? "#ffffff" : "")};
   }
 
   .form-control::placeholder{
@@ -39,9 +41,14 @@ function App() {
     color: ${(props) => (props.darkMode ? "#ffffff" : "")};
   }
 
+  .pagination .page-item .page-link{
+    background: ${(props) => (props.darkMode ? "#000000" : "")};
+    color: ${(props) => (props.darkMode ? "#ffffff" : "")};
+  }
+
   .explore_pill{
 
-    background: ${(props) => (props.darkMode ? "#000000" : "")};
+    background: ${(props) => (props.darkMode ? "#000000" : "#ffffff")};
     color: ${(props) => (props.darkMode ? "#ffffff" : "")};
 
   }
@@ -71,6 +78,18 @@ function App() {
     color: ${(props) => (props.darkMode ? "#ffffff" : "")};
   }
 
+  .top-nw-nav-header.navbar .navbar-nav.right_nav.top-nw-nav .nav-item.dropdown .dropdown-menu.firstmenu li a.dropdown-item:hover{
+    color: ${(props) => (props.darkMode ? "#27ae60" : "#000000")};
+  }
+
+  .side-nav.open{
+    background-color: ${(props) => (props.darkMode ? "#000000" : "#ffffff")};
+  }
+
+  .side-nav li a {
+    color: ${(props) => (props.darkMode ? "#27ae60" : "#000000")};
+  }
+
   .bgWhite {
     background-color: ${(props) => (props.darkMode ? "#000000" : "#ffffff")};
   }
@@ -88,6 +107,7 @@ function App() {
 
 `;
 
+  //darkmode toggle container
   const ToggleContainer = styled.div`
     position: fixed;
     bottom: 10px;
@@ -99,11 +119,13 @@ function App() {
     color: ${(props) => (props.darkMode ? "#ffffff" : "#000000")};
   `;
 
+  //darkmode button
   const ToggleButton = styled.div`
     display: inline-block;
     padding: 8px;
-    background-color: ${(props) => (props.darkMode ? "#000000" : "#fff")};
-    border: ${(props) => (props.darkMode ? "" : "2px solid black")};
+    background-color: ${(props) => (props.darkMode ? "#000000" : "#ffffff")};
+    border: ${(props) =>
+      props.darkMode ? "2px solid white" : "2px solid black"};
     color: ${(props) => (props.darkMode ? "#ffffff" : "#000000")};
     border-radius: 4px;
     margin-right: 8px;

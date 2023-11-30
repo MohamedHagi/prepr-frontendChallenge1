@@ -217,16 +217,34 @@ div::-webkit-scrollbar-thumb:hover {
     word-break: break-word;
   }
 }
-.row {
-  margin-right: 0px !important;
-  margin-left: 0px !important;
-}
+
 .wrapping {
   font-size: 18px;
   word-break: break-word;
 }
 .ttle_break {
   word-break: break-word;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #498cce !important;
+}
+
+.pagination {
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+.pagination .page-item .page-link {
+  border: 1px solid #13b15c;
+  border-radius: 0px !important;
+}
+.pagination .page-item.active .page-link {
+  background-color: #13b15c;
 }
 
 @font-face {

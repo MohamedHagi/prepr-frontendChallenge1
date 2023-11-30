@@ -4,6 +4,7 @@ import "../View/view.css";
 import Filter from "../Filter/Filter";
 import CardContainer from "../Card/CardContainer";
 import cardData from "./dummyCards.json";
+import SearchBar from "../SearchBar/SearchBar";
 
 export default function View() {
   const [viewOption, setViewOption] = useState("Labs");
@@ -55,6 +56,7 @@ export default function View() {
           <Filter filterType={viewOption} />
           <div className="col-md-10 exp_box">
             <div className="row">
+              <SearchBar />
               <CardContainer cardData={cardData} filterType={viewOption} />
             </div>
           </div>

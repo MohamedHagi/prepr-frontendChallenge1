@@ -50,29 +50,25 @@
   font-size: clamp(1rem, 2.2vw, 3rem);
 }
 
-/* Container for explore components */
 .explore_section {
   background: #ffffff;
   color: #000000;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
-  flex-wrap: wrap; /* Allow components to wrap to the next line on smaller screens */
+  flex-wrap: wrap;
 }
 
-/* Individual explore components */
 .explore_component {
-  width: 100%; /* Full width by default */
-  border-radius: 0; /* Reset border-radius */
+  width: 100%;
+  border-radius: 0;
 }
 
-/* Selected explore component */
 .explore_component.selected_explore_component {
   background: #498cce;
   color: #ffffff;
 }
 
-/* Responsive font size for small screens */
 @media only screen and (max-width: 600px) {
   .explore_component h2 {
     font-size: 14px;

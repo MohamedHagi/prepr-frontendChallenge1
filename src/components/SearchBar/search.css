@@ -1,0 +1,27 @@
+.blue_btn {
+  min-width: 5rem;
+  color: #ffffff;
+  background: #498cce;
+}
+.p-2 {
+  padding: 1rem !important;
+}
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.btn {
+  font-family: SFUIDisplayRegular;
+  text-transform: unset;
+  font-size: 15px;
+  box-shadow: none;
+  padding: 8px;
+  margin: 0.375rem;
+}
+
+.sortBy {
+  width: 100%;
+  justify-content: flex-end;
+  gap: 2%;
+}

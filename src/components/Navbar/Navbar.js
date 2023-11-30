@@ -17,7 +17,7 @@ export default function Navbar() {
                 <img
                   src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/logoNew.png"
                   style={{ width: "100px!important" }}
-                  className="home_hint"
+                  className="preprLogo"
                   alt="prepr"
                 />
               </a>
@@ -37,7 +37,7 @@ export default function Navbar() {
           <ul className="navbar-nav right_nav  top-nw-nav ">
             <span className="menuOptions">
               <li className="nav-item">
-                <a className="nav-link" href="https://preprlabs.org/explore">
+                <a className="nav-link" href="#">
                   <span>Explore</span>
                 </a>
               </li>
@@ -45,12 +45,8 @@ export default function Navbar() {
               <li class="nav-item dropdown d-sm-flex d-md-flex d-lg-flex d-xl-flex show">
                 <a
                   class="nav-link dropdown-toggle waves-effect waves-light"
-                  data-qa="Top Nav: Dashboards"
                   id="new_org_dashboard"
                   href="#"
-                  data-toggle="dropdown"
-                  data-url="https://preprlabs.org/organisation/home"
-                  aria-expanded="true"
                 >
                   <span class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
                     Dashboard
@@ -60,8 +56,7 @@ export default function Navbar() {
                   <li class="dropdown-submenu">
                     <a
                       class="dropdown-item dropdown-toggle waves-effect waves-light"
-                      data-qa="Top Nav: Dasboards - User"
-                      href="https://preprlabs.org/user/home"
+                      href="#"
                     >
                       <img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/user.png" />
                       User dashboard
