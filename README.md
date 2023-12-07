@@ -1,4 +1,4 @@
-# React Application - PreprLabs Clone
+# React Application - PreprLabs Challenge 1
 
 ## Overview
 
